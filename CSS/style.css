@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans:wght@200;300;400;500&display=swap');
+
+
+html{
+    font-family: 'Noto sans', sans-serif;
+}
+
+h1{
+    font-family: 'Bungee', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    padding-left: 5px;
+}
+body{
+    min-height: 100vh;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+header, 
+main, 
+footer{
+    width: 800px;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plusicon{
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-right: 15px;
+    transition: 300ms;
+}
+main{
+    display: flex; flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.plusicon:hover{
+    color: cyan;
+    
+}
+
+#enterTodo input{
+    background: transparent;
+    outline: none;
+    padding: 15px 8px;
+    color: white;
+    flex: 1;
+    border: none;
+}
+#enterTodo {
+    display: none;
+}
+#enterTodo form{
+    display: flex;
+    align-items: stretch;
+    border: 1px solid skyblue;
+    position: relative;
+}
+#enterTodo form:focus-within{
+    border-color: cyan;
+
+}
+#enterTodo button{
+    background: skyblue;
+    position: absolute;
+    right: 0; top: 0;
+    height: 100%;
+    border: none;
+    padding: 0 20px;
+    color: navy;
+    font-family: 'Bungee', sans-serif;
+    cursor: pointer;
+    transition: 300ms;
+}
+#enterTodo button:hover{
+    background: #0f172a;
+    color: skyblue;
+}
+
+#todos{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.todoItem{
+    display: flex;
+    align-items: center;
+}
+.todoItem p{
+    flex: 1;
+}
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.actions i{
+    transition: 300ms;
+}
+.actions i:hover{
+    color: skyblue;
+}
+footer{
+    display: grid;
+    place-items: center;
+}
+footer a{
+    color: inherit;
+}
+footer i{
+    cursor: pointer;
+    transition: 300ms;
+}
+footer i:hover{
+    color: cyan;
+}
